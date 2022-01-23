@@ -27,3 +27,33 @@ const Person = function(name,birthyear){
 // constructor: ƒ (name,birthyear)
 // [[Prototype]]: Object
   console.log(shailesh);
+
+  //class declaration
+  class Personcl {
+    constructor(fistname,year){
+      this.firstname = fistname;
+      this.year =year;
+    }
+
+    clacAge(){
+      console.log(2037-this.year);
+    }
+  }
+
+  const jessica = new Personcl('jessica',1997);
+
+  jessica.clacAge();
+
+
+  // SEETERS AND GETTERS
+
+  const account = {
+    owner :'santosh',
+    mov : [12,34,244,289],
+
+   get latest(){
+      return this.mov.slice(-1).pop();
+    }
+  }
+
+  console.log(account.latest);
